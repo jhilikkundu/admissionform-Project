@@ -1,0 +1,39 @@
+
+#outside {
+  background-image: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/131403-light-orange-low-poly-abstract-background-design-vector.jpg?w=800&q=95");
+  
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+form {
+  
+  margin: 0 auto;
+  width: 70%;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  
+}
+
+button {
+  margin: .5em;
+  font-size: 1em;
+  text-transform: capitalize;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  
+}
+
+#submitbutton {
+  display: flex; 
+  justify-content: center;
+}

@@ -1,0 +1,70 @@
+<html>
+    <head>
+	    
+        <title>Student Detail</title>
+		<link rel="stylesheet" type="text/css" href="style.css"> <! external css is connected here>
+        <script type="text/javascript" src="form.js"></script> <! javascript file is called here>
+        <img align = "right" src="https://collegeplanningadvisors.files.wordpress.com/2010/11/longwood-university-virginia.jpg">
+    </head>
+    <body>
+	   <form onsubmit="return message();">
+            <h1 id="title">Student Detail Form</h1>
+            <table border="0">
+                <tr> 
+                    <!row for student name with js validation>
+                    <td class="label_col">Student Name : </td>
+                    <td class="input_col"><input type="text" id="fullname" name="fullname" onblur="userfirst();"></td>
+                    <td class="feedback_col"><span id="fullnamePrompt">&nbsp;</span></td>
+                </tr>
+                <tr>  <!row for gaurdian name with js validation>
+                    <td class="label_col">Gurdian Name : </td>
+                    <td class="input_col"><input type="text" id="gname" name="gname" onblur="gurdian();"></td>
+                    <td class="feedback_col"><span id="gurdianPrompt">&nbsp;</span></td>
+                </tr>               
+                <tr>  <!row for mobile number with js validation>
+                    <td class="label_col">Mobile : </td> <br>
+                    <td class="input_col"><input type="text" id="phone" name="phone" onblur="mobileno();"></td>
+                    <td class="feedback_col"><span id="phonePrompt">xxx-xxx-xxxx</span></td>
+                </tr>    
+                <tr>
+                    <td class="label_col">Email Id : </td>
+                    <td class="input_col"><input type="email" name="mail" placeholder="abc@gmail.com"></td>
+                </tr>     
+            </table>
+            gender : <br>
+            <input type="radio" name="Male">Male<br>
+            <input type="radio" name="Female">Female<br>
+            <input type="radio" name="Others">Others<br>
+            Date of birth : <br>
+            <td class="input_col"><input type="date" name="dob"></td><br>
+            Blood Group: <br>
+
+            <! dropdown box for bloodgroup>
+            <select name="blood group">
+                <option value="a+">A+</option>
+                <option value="a-">A-</option>
+                <option value="b+">B+</option>
+                <option value="b-">B-</option>
+                <option value="o+">O+</option>
+                <option value="o-">O-</option>
+                <option value="ab+">AB+</option>
+                <option value="ab-">AB-</option>
+            </select><br>
+            Address : <br>
+            <input type="text" name="address"><br>
+            Institute: <br>
+            <input type="text" name="inst"><br>
+            Password :  <br>
+            <input type="password" name="password"><br>
+			<style>
+			body {
+			background-color: #fefbd8;
+			}
+			</style>
+			     <div id="submitbutton">
+			     <button type="submit" id="submit">Submit</button>   
+		         </div>
+            
+        </form>
+    </body>
+</html>
